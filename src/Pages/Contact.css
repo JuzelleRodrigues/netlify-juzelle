@@ -1,0 +1,169 @@
+/* Import Fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Montserrat:wght@400;500;700&display=swap');
+
+/* Container styling for FAQ section */
+.faq-container {
+  background-color: #f9f9f9; /* Light gray background color */
+  padding: 3rem; /* Padding around the FAQ container */
+  border-radius: 10px; /* Rounded corners for a smooth look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  margin-top: 2rem; /* Space from the element above */
+}
+
+/* Accordion Header Styling */
+.accordion-header {
+  font-family: 'Inter', sans-serif; /* Use 'Inter' font for accordion headers */
+  font-size: 1.2rem; /* Header font size */
+  font-weight: bold; /* Make header text bold */
+  color: #333; /* Dark gray text color */
+  background-color: #fff; /* White background for accordion headers */
+  border: none; /* Remove border around header */
+  padding: 1rem; /* Padding inside the accordion header */
+  border-radius: 5px; /* Rounded corners for accordion header */
+  transition: transform 0.3s ease-in-out; /* Smooth transition for header movement */
+}
+
+/* Hover effect for Accordion Header */
+.accordion-header:hover {
+  transform: translateY(-2px); /* Lift the header slightly when hovered */
+  color: #007bff; /* Change text color to blue on hover */
+}
+
+/* Accordion Item Styling */
+.accordion-item {
+  border: none; /* Remove borders from accordion items */
+  margin-bottom: 1rem; /* Space between accordion items */
+  border-radius: 5px; /* Rounded corners for accordion items */
+  overflow: hidden; /* Prevent overflow inside items */
+  background: linear-gradient(135deg, #ffffff, #f4f4f4); /* Gradient background for items */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+/* Accordion Body Styling */
+.accordion-body {
+  background-color: #ffffff; /* White background for body */
+  color: #555; /* Dark gray text for readability */
+  font-family: 'Gilroy', sans-serif; /* Use Gilroy font for the body text */
+  padding: 1.2rem; /* Padding inside the accordion body */
+  border-top: 1px solid #ddd; /* Light gray border on top */
+  animation: fadeIn 0.5s ease-in-out; /* Fade-in animation for opening */
+}
+
+/* Animation for opening accordion body */
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Start invisible */
+    transform: translateY(-10px); /* Start slightly above */
+  }
+  to {
+    opacity: 1; /* End visible */
+    transform: translateY(0); /* End in normal position */
+  }
+}
+
+/* Active Header Styling when expanded */
+.accordion-header[aria-expanded="true"] {
+  color: #007bff; /* Change text color to blue when active */
+}
+
+/* Icon Styling (used in accordion button) */
+.accordion-button::after {
+  transform: scale(1.5); /* Increase icon size */
+  margin-left: 0.5rem; /* Add space between icon and text */
+  transition: transform 0.3s; /* Smooth transition for icon transformation */
+}
+
+/* Rotate icon when accordion is expanded */
+.accordion-button:not(.collapsed)::after {
+  transform: rotate(90deg) scale(1.5); /* Rotate 90 degrees when expanded */
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+  .faq-container {
+    padding: 2rem; /* Reduce padding for smaller screens */
+  }
+  .accordion-header {
+    font-size: 1rem; /* Decrease font size for smaller screens */
+  }
+  .accordion-body {
+    font-size: 0.9rem; /* Reduce font size for accordion body */
+  }
+}
+
+/* Contact Form Styling */
+.contact-form {
+  padding: 40px; /* Padding inside the contact form */
+  background: white; /* White background for the form */
+}
+
+/* Title Styling for Contact Info Section */
+.contact-info .title {
+  font-family: 'Cormorant Garamond', serif; /* Cormorant Garamond for the title */
+  font-size: 80px; /* Large font size for title */
+  font-weight: 700; /* Bold weight for emphasis */
+  color: black; /* Black color for title */
+}
+
+/* Description Styling for Contact Info */
+.contact-info .description {
+  font-family: 'Montserrat', sans-serif; /* Montserrat font for description */
+  font-size: 20px; /* Font size for description */
+  color: black; /* Black text color */
+  width: 90%; /* Set width to 90% of the container */
+  margin-bottom: 50px; /* Bottom margin for spacing */
+}
+
+/* Section Heading Styling */
+.info-group h2 {
+  font-family: 'Cormorant Garamond', serif; /* Cormorant Garamond for section headings */
+  font-size: 32px; /* Font size for section headings */
+  font-weight: 700; /* Bold weight for section heading */
+  color: black; /* Black color for section heading */
+  margin-top: 20px; /* Space above the section heading */
+}
+
+/* Paragraph Styling */
+.info-group p {
+  font-family: 'Montserrat', sans-serif; /* Montserrat for paragraph text */
+  font-size: 16px; /* Font size for paragraphs */
+  font-weight: 400; /* Normal weight for paragraph text */
+  color: black; /* Black color for text */
+}
+
+/* Styling for Social Links */
+.social-link {
+  text-decoration: underline; /* Underline links for social media */
+  cursor: pointer; /* Change cursor to pointer to indicate link */
+}
+
+/* Form Label Styling */
+.contact-form .form-label {
+  font-family: 'Montserrat', sans-serif; /* Montserrat font for labels */
+  font-size: 14px; /* Font size for form labels */
+  color: black; /* Black color for labels */
+}
+
+/* Form Control and Select Box Styling */
+.contact-form .form-control,
+.contact-form .form-select {
+  background: #F7F7F7; /* Light gray background for form inputs */
+  font-family: 'Montserrat-light', sans-serif; /* Light weight of Montserrat font */
+}
+
+/* Submit Button Styling */
+.submit-button {
+  font-family: 'Montserrat-bold', sans-serif; /* Bold Montserrat for the button */
+  font-size: 18px; /* Font size for the button text */
+  font-weight: 500; /* Semi-bold weight for button */
+  padding: 12px 100px; /* Padding inside the button */
+  background: black; /* Black background for the button */
+  color: white; /* White text for the button */
+  border: none; /* Remove border from the button */
+  transition: background 0.3s ease-in-out; /* Smooth transition for background color change */
+}
+
+/* Button Hover Effect */
+.submit-button:hover {
+  background-color: #333; /* Darken the background color on hover */
+}

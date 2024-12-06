@@ -1,0 +1,250 @@
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Gilroy:wght@400;700&family=Inter:wght@400;500;700&display=swap'); 
+
+
+/* Setup Details */
+.setup-details {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  flex-wrap: no-wrap;
+  margin-bottom: 30px;
+}
+
+.setup-item {
+  background-color: #fff;
+  padding: 15px;
+  width: 150px; /* Reduced width for smaller boxes */
+  box-shadow: none; /* Removed box shadow */
+  border: 1px solid black; /* 1px black border */
+  border-radius: 0px; /* Slight rounding of corners */
+  text-align: center;
+  transition: transform 0.3s ease;
+  color: #333;
+}
+
+.setup-item:hover {
+  transform: scale(1.05);
+  background-color: #eaf7f4;
+}
+
+.setup-item .icon {
+  font-size: 2rem; /* Reduced icon size */
+  color: #558C8C;
+  margin-bottom: 10px;
+}
+
+.setup-item h4 {
+  font-family: 'Gilroy', sans-serif; /* Headings use Gilroy */
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.setup-item p {
+  font-family: 'Inter', sans-serif; /* Paragraphs use Inter */
+  font-size: 0.875rem;
+  color: #777;
+}
+
+@media screen and (max-width: 768px) {
+  .setup-details {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; /* Reduce gap for mobile screens */
+  }
+  
+  .setup-item {
+    width: 80%;
+    margin-bottom: 15px;
+  }
+}
+
+
+
+.camera-setup-content {
+   display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  flex-direction: column; /* Stack content vertically */
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  text-align: center; /* Center-align text within the content */
+  padding: 0px; /* Optional padding */
+  background-color: #fff; /* Optional background color */
+}
+
+
+
+.blog-image-container {
+  display: flex; /* Activates flexbox */
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically (optional) */
+  height: 500px; /* Set a custom height */
+  width: 20%; /* Set a custom width, 20% of the parent container */
+  max-width: 1200px; /* Optional: Limits the max width to avoid it getting too wide */
+  margin: 0 auto; /* Centers the container within the parent */
+  transition: transform 0.3s ease; /* Animation for the transform */
+}
+
+.blog-image-container:hover {
+  transform: scale(0.3); /* Scales the image down to 30% of its original size */
+}
+
+.blog-image-container img {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  max-width: 100%; /* Ensures image scales responsively */
+  height: auto; /* Keeps the image aspect ratio intact */
+  transition: transform 0.3s ease; /* Ensure the image inside the container also scales smoothly */
+}
+
+  
+  @media screen and (max-width: 768px) {
+    .blog-content {
+      width: 95%; /* Full width for smaller screens */
+      height: 300px; /* Adjust height for mobile devices */
+    }
+  }
+
+  .blog-image {
+    margin-top: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .blog-content {
+    flex: 2;
+    padding: 20px;
+  }
+  
+  .blog-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .blog-description {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 15px;
+  }
+  
+  .blog-link {
+    font-size: 16px;
+    color: #ff7300;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .blog-link:hover {
+    text-decoration: underline;
+  }
+  
+
+
+
+  .section.text-section {
+    padding: 20px 360px; /* Adds padding to the top/bottom and sides */
+    font-family: 'Inter', sans-serif; /* Ensure the font is consistent */
+    color: #333; /* Text color */
+    font-size: 1rem; /* Adjust font size */
+    line-height: 1.6; /* Line height for better readability */
+    background-color: #fff; /* Optional background color */
+    border-radius: 8px; /* Optional rounded corners */
+    margin: 20px 0; /* Optional margin around the section */
+  }
+  
+  .section.text-section h4 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+
+  }
+  
+  .section.text-section h3 {
+    color: #222; /* Dark color for headings */
+    font-size: 1.2rem; /* Adjust heading font size */
+    margin-bottom: 10px; /* Space below headings */
+  }
+  
+  .section.text-section p {
+    margin-bottom: 15px; /* Space between paragraphs */
+    font-size: 1rem;
+    color: #555; /* Slightly lighter color for paragraph text */
+  }
+  
+  .section.text-section h3 {
+    font-size: 1.4rem; /* Slightly larger font for 'Technical Commentary' */
+    margin-top: 20px; /* Space before h3 */
+    font-weight: bold;
+  }
+  
+
+  
+
+  /*Blog Category - Title - Author*/
+  .blog-header-details {
+    display: flex;
+    align-items: center; /* Center vertically within the div */
+    justify-content: center; /* Center horizontally within the div */
+    gap: 20px; /* Space between items */
+    width: 100%; /* Ensure it spans the parent container */
+    height: 100%; /* Adjust if the parent container has a fixed height */
+    padding-top: 10px;
+    padding-bottom: 30px;
+  }
+  
+  .blog-category {
+  color: #ff6347; /* Example color */
+}
+
+  .blog-date,
+  .author-name {
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+  }
+  
+  .divider {
+    width: 1px;
+    height: 30px;
+    background-color: #ccc;
+  }
+  
+  .date-info,
+  .author-info {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between icon/image and text */
+  }
+  
+  .date-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    }
+  
+   .icon {
+    font-size: 18px;
+    color: #ff6347; /* Example color */
+  }
+  
+  .author-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .author-name {
+    font-size: 16px;
+    font-weight: 600;
+    color: #555;
+  }
+/*Blog Category - Title - Author*/

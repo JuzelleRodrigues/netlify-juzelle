@@ -1,0 +1,103 @@
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Montserrat:wght@400;500;700&display=swap');
+
+.footer {
+  /* Ensure the footer stays at the bottom of the viewport, even if content is less */
+  /* position: fixed; // Uncomment this if you want the footer to be fixed at the bottom of the screen */
+  bottom: 0; /* Ensure footer remains at the bottom */
+  left: 0; /* Align footer to the left edge */
+  width: 100%; /* Full width of the screen */
+  background-color: #222; /* Dark background color */
+  color: #fff; /* White text color for contrast */
+  padding: 20px 0; /* Padding for vertical spacing */
+  text-align: center; /* Center align the text */
+  z-index: 10; /* Ensures the footer stays on top of other elements */
+  overflow: hidden; /* Hide overflow from any animated effects (like waves) */
+  font-family: 'Cormorant Garamond', serif; /* Change heading font to Cormorant Garamond */
+}
+
+/* Footer Content Section */
+.footer-content {
+  display: flex; /* Flexbox for easy alignment */
+  justify-content: space-around; /* Distribute content evenly */
+  flex-wrap: wrap; /* Allow content to wrap to the next line on smaller screens */
+  margin-bottom: 30px; /* Space between content and footer bottom */
+}
+
+/* Styling for Footer Links, Contact, and Social sections */
+.footer-links,
+.footer-contact,
+.footer-social {
+  width: 25%; /* Each section takes up 25% of the footer space */
+  padding: 10px; /* Padding inside each section */
+}
+
+/* Header Styles in Footer Sections */
+.footer-links h4,
+.footer-contact h4,
+.footer-social h4 {
+  font-family: 'Cormorant Garamond', serif; /* Change font to Cormorant Garamond for headings */
+  font-size: 1.3rem; /* Set font size for section headings */
+  margin-bottom: 15px; /* Add space after the heading */
+}
+
+/* List Styling in Footer Links */
+.footer-links ul {
+  list-style: none; /* Remove default list bullets */
+  padding: 0; /* Remove padding around the list */
+}
+
+/* List Item Styles in Footer Links */
+.footer-links li {
+  margin: 10px 0; /* Add margin between list items */
+}
+
+/* Links Styling in Footer Links */
+.footer-links a {
+  color: #fff; /* White text color for links */
+  text-decoration: none; /* Remove underline from links */
+  font-size: 1.1rem; /* Set font size for links */
+}
+
+/* Hover Effect for Footer Links */
+.footer-links a:hover {
+  color: #f4a261; /* Change link color to a warm tone on hover */
+}
+
+/* Styling for Email Link in Footer Contact Section */
+.email-link {
+  color: #fff; /* White color for email text */
+  font-size: 1.1rem; /* Font size for email link */
+  text-decoration: none; /* No underline for email link */
+}
+
+/* Hover Effect for Email Link */
+.email-link:hover {
+  color: #f4a261; /* Change email link color to warm tone on hover */
+}
+
+/* Social Icons Styling */
+.footer-social .social-icons a {
+  font-size: 2rem; /* Set font size for social media icons */
+  margin: 0 15px; /* Add margin between social icons */
+  color: #fff; /* White color for icons */
+  text-decoration: none; /* Remove underline from icons */
+}
+
+/* Hover Effect for Social Icons */
+.footer-social .social-icons a:hover {
+  color: #f4a261; /* Change icon color to warm tone on hover */
+}
+
+/* Footer Bottom Styling */
+.footer-bottom {
+  background-color: #222; /* Same dark background as the footer */
+  padding: 15px 0; /* Padding for vertical spacing in footer bottom */
+}
+
+/* Text Styling for Footer Bottom */
+.footer-bottom p {
+  font-family: 'Montserrat', sans-serif; /* Use Montserrat font for footer paragraph */
+  font-size: 1rem; /* Font size for the text */
+  margin: 0; /* Remove margin for better alignment */
+}

@@ -1,0 +1,90 @@
+/* Overall container for the About Me section */
+.about-me-container {
+  padding: 0px;
+  background-color: #fff; /* White background for a clean look */
+}
+
+/* Card for About Me Section */
+.about-me-card {
+  padding-top: 20px;
+  background-color: #fff;
+  border-radius: 12px; /* Rounded corners for a smooth look */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+/* Heading of the About Me Card */
+.about-me-title {
+  font-size: 32px;
+  font-family: 'Cormorant Garamond', serif; /* Changed to Cormorant Garamond for the title */
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px; /* Spacing below the title */
+}
+
+/* Description text inside the About Me Card */
+.about-me-description {
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif; /* Changed to Montserrat for the paragraph text */
+  font-weight: 400;
+  color: rgba(60, 60, 67, 0.85);
+  margin-bottom: 30px; /* Spacing below the description */
+}
+
+/* Button style inside the About Me Card */
+.about-me-button {
+  width: 100%;
+  font-size: 16px;
+  font-family: 'Inter', sans-serif; /* Keeping Inter for the button font */
+  font-weight: 700;
+  border-radius: 30px; /* Rounded corners for the button */
+}
+
+/* Cards for Work Experience and Education sections */
+.work-experience-card, .education-card {
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+  margin-bottom: 30px; /* Space between the cards */
+}
+
+/* Headings inside Work Experience and Education Cards */
+.work-experience-card h5, .education-card h5 {
+  font-size: 20px;
+  font-family: 'Cormorant Garamond', serif; /* Changed to Cormorant Garamond for heading */
+  font-weight: 600;
+  color: #333;
+}
+
+/* Text for dates inside Work Experience and Education Cards */
+.work-experience-card span, .education-card span {
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif; /* Changed to Montserrat for dates */
+  font-weight: 400;
+  color: #6c757d; /* Lighter color for dates */
+}
+
+/* Paragraph text inside Work Experience and Education Cards */
+.work-experience-card p, .education-card p {
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif; /* Changed to Montserrat for the paragraph text */
+  font-weight: 400;
+  color: rgba(60, 60, 67, 0.85);
+}
+
+/* Style for unordered list inside Education section (for certifications) */
+ul {
+  padding-left: 20px; /* Indentation for list */
+}
+
+ul li {
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif; /* Changed to Montserrat for list items */
+  font-weight: 400;
+  color: rgba(60, 60, 67, 0.85);
+}
+
+/* Media query for smaller screens to ensure responsiveness */
+@media (max-width: 767px) {
+  .about-me-card, .work-experience-card, .education-card {
+    width: 100%; /* Full width for smaller screens */
+  }
+}

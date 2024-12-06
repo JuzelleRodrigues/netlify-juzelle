@@ -1,0 +1,112 @@
+/* Import Fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Montserrat:wght@400;500;700&display=swap');
+
+/* General Styles for Body */
+body {
+  margin: 0; /* Remove default margin */
+  font-family: 'Montserrat', sans-serif; /* Use Montserrat for paragraphs for modern look */
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex; /* Use flexbox to align items horizontally */
+  justify-content: space-between; /* Space out items (logo and nav links) */
+  align-items: center; /* Align items vertically in the center */
+  padding: 10px 20px; /* Padding around navbar content */
+  background-color: #333; /* Dark background color for navbar */
+  color: white; /* White text color */
+  position: sticky; /* Navbar will stay at the top when scrolling */
+  top: 0; /* Stick to the top of the viewport */
+  z-index: 1000; /* Ensure navbar stays on top of other elements */
+}
+
+/* Logo Styles */
+.logo {
+  padding-left: 50px;
+  font-family: 'Cormorant Garamond', serif; /* Use Cormorant Garamond for logo heading */
+  font-size: 1.5rem; /* Font size for logo */
+  font-weight: bold; /* Make the logo bold */
+}
+
+.logo span {
+  color: #f4a261; /* Accent color for part of the logo text */
+}
+
+/* Hamburger Button (Visible on smaller screens) */
+.hamburger {
+  font-size: 1.5rem; /* Size of the hamburger icon */
+  color: white; /* White color for the hamburger icon */
+  background: none; /* No background for the button */
+  border: none; /* Remove default border */
+  cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
+  display: none; /* Hidden by default on larger screens, shown on smaller screens */
+}
+
+/* Navigation Links Styles */
+.nav-links {
+  display: flex; /* Display links horizontally */
+  list-style: none; /* Remove default list styling */
+  gap: 20px; /* Space between the navigation links */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove padding */
+}
+
+.nav-links li {
+  padding-right: 50px;
+  gap: 30px;
+  list-style: none; /* Ensure no list item markers */
+}
+
+.nav-links a {
+  text-decoration: none; /* Remove underline from links */
+  color: white; /* White color for links */
+  font-size: 1rem; /* Set font size for links */
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover Effect on Links */
+.nav-links a:hover {
+  text-decoration: none; /* Ensure no underline on hover */
+  color: #f4a261; /* Accent color when hovering over a link */
+}
+
+/* Active Link Styles (for the link that is currently active) */
+.nav-links a.active {
+  font-weight: bold; /* Make the active link bold */
+  text-decoration: none; /* Ensure no underline */
+  color: #f4a261; /* Accent color for active link */
+  border-bottom: 2px solid #f4a261; /* Optional underline effect for active link */
+}
+
+/* Responsive Navbar Styles (for smaller screens, max-width: 768px) */
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block; /* Show the hamburger button on smaller screens */
+  }
+
+  /* Adjust nav-links for mobile screens */
+  .nav-links {
+    padding-left: 50px; /* Add some padding on the left */
+    text-decoration: none; /* Remove text decoration */
+    flex-direction: column; /* Stack the links vertically */
+    align-items: center; /* Center the links */
+    position: absolute; /* Position the navbar links absolutely */
+    top: 60px; /* Position navbar below the top of the viewport */
+    right: 0; /* Align links to the right */
+    background-color: #333; /* Dark background for the dropdown */
+    width: 100%; /* Take up full width */
+    height: 100vh; /* Full height of the screen */
+    transform: translateX(100%); /* Initially hide the navbar off-screen */
+    transition: transform 0.3s ease-in-out; /* Smooth transition when sliding in */
+  }
+
+  /* When nav-links have the "active" class, slide the menu in */
+  .nav-links.active {
+    transform: translateX(0); /* Slide the menu in */
+  }
+
+  /* Adjust individual link items */
+  .nav-links li {
+    margin: 20px 0; /* Add vertical margin between items */
+  }
+}
